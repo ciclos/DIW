@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.caja-interna {
+            width: 5em;
+            height: 5em;
+            border: 0.5em solid red;
+            background-color: yellow;
+        }
+
+        div.caja-contenedora {
+            width: 10em;
+            height: 10em;
+            border: 0.5em solid black;
+            background-color: blue;
+            float: left;
+            margin:1em;
+        }
+
+    </style>
+</head>
+
+<body>
+  
+    <div class="caja-contenedora">
+        <div class="caja-interna">
+
+        </div>
+    </div>
+
+    <div class="caja-contenedora">
+        <div class="caja-interna" style="position: relative;top:1em">
+
+        </div>
+    </div>
+
+    <div class="caja-contenedora">
+        <div class="caja-interna" style="position: relative;top:1em;left: 1em">
+
+        </div>
+    </div>
+
+    <div class="caja-contenedora">
+        <div class="caja-interna" style="border: 0px">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
