@@ -13,7 +13,8 @@
         * {
             border: 0.1em solid black;
             padding: 1em;
-            font: 12pt Arial; /* Esta propiedad influye en todos los tamaños calculados usando "em" como magnitud. */
+            font: 12pt Arial;
+            /* Esta propiedad influye en todos los tamaños calculados usando "em" como magnitud. */
         }
 
         /* Selector de etiqueta */
@@ -48,17 +49,15 @@
 
         /* Selector de hijo  */
         /* Esta regla va a sobreescribir la anterior al ser mas especifica */
-        .verde > div {
+        .verde>div {
             background-color: blue;
             color: rgb(255, 187, 0)
         }
 
         /* Selector adyacente */
-        p + p{
-            background-color:aqua;
+        p+p {
+            background-color: aqua;
         }
-
-       
     </style>
 </head>
 
@@ -79,8 +78,6 @@
         <div> Div hijo de verde </div>
 
     </div>
-  
-
 
 </body>
 
