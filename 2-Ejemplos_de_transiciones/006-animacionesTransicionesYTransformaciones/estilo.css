@@ -1,0 +1,62 @@
+@keyframes entrada {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: 0%;
+  }
+}
+
+header {
+  animation-duration: 1s;
+  animation-name: entrada;
+
+  text-align: center;
+  position: relative;
+
+}
+
+
+.galeria{
+	animation-duration: 2s;
+	animation-name: entrada;
+
+	position: relative;
+	list-style-type: none;
+	margin: auto;
+	width: 70%;
+	margin-top: 5em;
+	background: #4a5;
+	border-radius: 0.8em;
+}
+
+.galeria img{
+	width: 8em;
+}
+
+.galeria li{
+	transition: all 1s;
+	
+	display: inline-block; 
+	padding: 0.5em;
+	background: white;
+	box-shadow: 0.5em 1em 25px #000;
+	margin: 2em;
+	
+	text-align: center;
+}
+
+.galeria li:nth-child(odd){
+	transform: rotate(10deg);
+}
+
+.galeria li:nth-child(even){
+	transform: rotate(-5deg);
+}
+
+.galeria li:hover{
+	transform: scale(1.7);
+}
+
+

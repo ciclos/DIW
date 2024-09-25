@@ -1,0 +1,35 @@
+body{
+	background: #ccc; 
+}
+
+#lateral{
+	background: white;
+	width:  80px;
+	height: 50em;
+}
+
+.herramientas{
+	list-style-type: none;
+	display: inline-block;
+	padding: 0;
+}
+
+.herramientas li{
+	margin: 1em;
+	width: 2.5em;
+	overflow: hidden;
+	transition: all 1s;
+	border: 0.2em solid black;
+	background: white;
+}
+
+.herramientas li:hover{
+	width: 100%;
+	z-index: 2;
+	position: relative;
+}
+
+.herramientas img{
+	height: 4em;
+}
+
