@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TEjemplos CSS3</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="flex1.css"> 
+        <link rel="stylesheet" type="text/css" href="tooltip.css"> 
+    </head>
+    <body>
+        <div id="menu">
+            <!-- primera fila -->
+            <fieldset id="forma">
+                <legend>Forma</legend>
+                <label>
+                    <input type="radio" name="forma" id="circulo" value="circulo"> Circulo
+                </label> </br>
+                <label>
+                    <input type="radio" name="forma" id="cuadrado" value="cuadrado"> Cuadrado
+                </label>
+            </fieldset>
+            <div id="propConte">
+                Propiedades del contenedor
+            </div>            
+            <div id="propHijos" class="tooltip">
+                <span class="tooltiptext_abajo"> 
+                    Para usar estas propiedades, establece un numero </br> y después pincha en el elemento que quieres modificar
+                </span>       
+                Propiedades de de los hijos
+            </div>            
+
+            <!-- segunda fila -->
+            <label for="wp">Wrap</label>
+            <label for="jc">Justify</label>
+            <label for="ai">Align-items</label>
+            <label for="fc">Direction</label>
+            <label for="ac">Align-content</label>
+            <label for="ac" class="tooltip">
+                <span class="tooltiptext_arriba">Controla como crecen</br> los elementos</span>
+                Grow
+            </label>
+            <label for="ac" class="tooltip">
+                <span class="tooltiptext_arriba">Controla como decrecen</br> los elementos</span>
+                Shrink
+            </label>
+
+            <!-- tercera fila -->
+            <button id="mas" type="button">+ elementos</button>
+            <select id="wp">
+                <option value="nowrap">No Wrap</option>
+                <option value="wrap">Wrap</option>
+                <option value="wrap-reverse">Wrap Reverse</option>
+            </select>
+            <select id="jc">
+                <option value="flex-end">Flex end</option>
+                <option value="flex-start">Flex start</option>
+                <option value="space-around">Space Around</option>
+                <option value="center">Center</option>
+            </select>
+            <select id="ai">
+                <option value="flex-end">Flex end</option>
+                <option value="flex-start">Flex start</option>
+                <option value="center">Center</option>
+                <option value="stretch">Strech</option>
+                <option value="baseline">Baseline</option>
+            </select>
+            <select id="fd">
+                <option value="row">Row</option>
+                <option value="row-reverse">Row Reverse</option>
+                <option value="column">Column</option>
+                <option value="column-reverse">Column Reverse</option>
+            </select>
+            <select id="ac">
+                <option value="flex-start">Flex start</option>
+                <option value="flex-end">Flex end</option>
+                <option value="center">Center</option>
+                <option value="stretch">Stretch</option>
+                <option value="space-between">Space between</option>
+                <option value="space-around">Space around</option>
+            </select>
+            <input type="text" id="grow" name="">
+            <input type="text" id="shrink" name="">
+
+            
+        </div>              
+        <div class="container" id="contenedor">
+        
+        </div>
+        <div class="flecha">        
+            <img id="izquierda" src="flechaIzq.png" >     
+            <img id="abajo" src="flechaAbajo.png" >
+        </div>
+        <script type="text/javascript" src="flex1.js"></script> 
+        
+    </body>
+</html>

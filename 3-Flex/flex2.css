@@ -1,0 +1,40 @@
+.navigation {
+  list-style: none;
+  margin: 0;   
+  background: deepskyblue;
+
+  display: flex;
+  justify-content: flex-end; /* Para dispositivos grandes queremos los botones al final del eje principal*/
+}
+
+/* Formato del botón */
+.navigation li{
+  background: tomato;
+  margin-top: 10px;  
+  padding: 1em; 
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 0.3em;
+  border: 0.1em solid black;
+  margin: 0.2em;
+}
+
+/* Para dispositivos medianos queremos tener los botones en el centro */
+@media (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+/* Para dispositivos pequeños el menu se transforma en columna */
+@media (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+}
+
+

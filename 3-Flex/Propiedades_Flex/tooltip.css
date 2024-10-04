@@ -1,0 +1,59 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext_abajo, .tooltip .tooltiptext_arriba{
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/*-- Posicion de los tooltip*/
+.tooltiptext_arriba{
+    bottom: 125%;
+    width: 120px;
+}
+
+.tooltiptext_abajo{
+    top: 125%;
+    width: 220px;
+}
+
+/*-- Punta del bocadillo */
+.tooltip .tooltiptext_arriba::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip .tooltiptext_abajo::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color:  transparent transparent #555 transparent;
+}
+
+/*-- Disparador del tooltip*/
+.tooltip:hover .tooltiptext_arriba, .tooltip:hover .tooltiptext_abajo {
+    visibility: visible;
+    opacity: 1;
+}

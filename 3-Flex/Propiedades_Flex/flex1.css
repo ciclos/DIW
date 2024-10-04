@@ -1,0 +1,78 @@
+#menu{
+    background-color: #4567aa;
+    padding: 1em;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 1em; 
+}
+
+#menu label, #menu legend{
+  color: white;
+  text-align: center;
+  font: 0.9em Tahoma;
+}
+
+#propConte{
+  grid-column: 2 / span 5;
+  color: white;
+  text-align: center;
+  font: 1em Tahoma;
+  background-color: black;
+  padding: 1em;
+}
+
+#propHijos{
+  grid-column: 7 / span 2;
+  color: white;
+  text-align: center;
+  font: 1em Tahoma;
+  background-color: black;
+  padding: 1em;
+}
+
+#forma{
+  grid-row: 1 / span 2;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;  
+  background-color: black;
+  width: 90%;
+}
+
+.container div{
+  background: tomato;
+  padding: 5px;
+  margin-top: 10px;  
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  border-radius: 100%;
+  border: 0.1em solid black; 
+  background-color: blue;
+  width: 2em;
+  height: 2em;
+}
+
+.container div:nth-child(3n){
+  background-color: red;
+  width: 4em;
+  height: 4em;
+}
+
+.flecha{
+  text-align: right;
+  width: 90%;
+}
+
+.flecha #izquierda{
+  width: 4em;
+}
+
+.flecha #abajo{
+  height: 3em;
+}

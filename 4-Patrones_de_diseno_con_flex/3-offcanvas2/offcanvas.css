@@ -1,0 +1,64 @@
+.columna1 {
+  transition: all 0.3s;
+  background-color: grey;
+  overflow: hidden;
+}
+
+.columna1 a{
+  color: white;
+  display: block;
+  margin: 0.1em 1em;
+  text-decoration: none;
+  background: black;
+  border-radius: 0.2em;
+  padding: 0.2em;
+}
+
+#icono{
+  width: 40px;
+  height: 40px;
+  background: url("menu.png") no-repeat center;
+}
+
+.columna2 {
+  background-color: yellow;
+  transition: all 0.3s;
+}
+
+@media (min-width: 600px){
+  .columna1{
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+  }
+  .columna2{
+    position: absolute;
+    left: 200px;
+    height: 100vh;
+  }
+  #icono{
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 600px){
+	.columna1{
+		width: 40px;
+    height: 40px;
+    border-radius: 0.2em;
+    border: 0.1em solid black;
+    float: left;
+    margin: 0.5em;
+ 	}
+
+  .columna1:hover{
+   
+    width: 200px;
+    height: 100vh;
+   
+  }
+
+  #icono{
+    visibility: visible;
+  }
+}

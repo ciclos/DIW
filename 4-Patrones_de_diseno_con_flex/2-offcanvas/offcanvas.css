@@ -1,0 +1,25 @@
+.columna1 {
+  position: absolute;
+  width: 200px;
+  height: 100vh;
+  transition: all 0.3s;
+  background-color: grey;
+}
+
+.columna2 {
+  position: absolute;
+  left: 200px;
+  height: 100vh;
+  position: absolute;
+  background-color: yellow;
+  transition: all 0.3s;
+}
+
+@media (max-width: 600px){
+	.columna1{
+		left: -180px;
+	}
+	.columna2{
+		left: 20px;
+	}
+}

@@ -1,0 +1,64 @@
+/* Layout Shifter */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+*{
+  overflow: hidden;
+}
+
+.columna1{
+  background-color: red;
+  height: 15vh;
+}
+
+.columna2{
+  background-color: blue;
+  height: 70vh; 
+
+}
+
+.columna3{
+  background-color: green;
+  height: 15vh;
+}
+
+.columna1, .columna2, .columna3, .container-inner {
+  width: 100%;
+}
+
+@media (min-width: 400px) {
+  .columna1 {
+    height: 20vh;
+  }
+  .columna2 {
+    height: 40vh;
+  }
+  .columna3 {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 600px) {
+  .columna1 {
+    width: 25%;
+    height: 100vh;
+  }
+
+  .columna2, .columna3 {
+    height: 50vh;
+  }
+  
+  .container-inner {
+    width: 75%;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

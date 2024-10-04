@@ -1,0 +1,60 @@
+.wrapper {
+  font-weight: bold;
+  text-align: center;
+
+  display: flex;  
+  flex-flow: row wrap;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 1 100%; /* Modificamos el compartimiento de los flex-items*/
+}
+
+/* Si bajamos de 600px: meter los aside en la misma linea*/
+@media (min-width: 600px) {
+  .aside { flex: 1 1 auto; } /* Los aside crecen de forma proporcinal y el resto todavia a 100% */
+}
+
+/* Para tamaños grandes, main cogera el triple de espacio sobrante que lo aside antes definidos. 
+ * Ademas reordenamos los elementos
+ *
+ * En este tamaño, mira con el inspector de elementos los estilos aplicados a main y como se ha
+ * sobreescrito el 100% de la regla heredada de wrapper
+ */
+@media (min-width: 800px) {
+  .main    { flex: 3 0; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+/* Formato general */
+
+body {
+  padding: 2em; 
+}
+
+.header {
+  background: tomato;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.aside-1 {
+  background: gold;
+}
+
+.aside-2 {
+  background: hotpink;
+}
+
+

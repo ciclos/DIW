@@ -1,0 +1,48 @@
+/* Column Drop */
+
+*{
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.columna1{
+  background-color: green;
+}
+
+.columna2{
+  background-color: red;
+}
+
+.columna3{
+  background-color: blue;
+}
+
+.columna1, .columna2, .columna3 {
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .columna1 {
+    width: 60%;
+    order: 2;
+  }
+
+  .columna2 {
+    width: 40%;
+    order: 1;
+  }
+
+  .columna3 {
+    width: 100%;
+    order: 3;
+  }
+}
+
+@media (min-width: 800px) {
+  .columna2, .columna3 {
+    width: 20%;
+  }
+}
