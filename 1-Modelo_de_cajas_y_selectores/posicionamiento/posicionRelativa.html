@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- 
+    Ejemplo de desplazamiento relativo
+    autor: Diego Cordoba
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background:
+                linear-gradient(90deg, white 10px, transparent 1%) center,
+                linear-gradient(white 10px, transparent 1%) center,
+                black;
+            background-size: 12px 12px;
+        }
+        p{
+            display: inline-block;
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            background-color: burlywood;
+            font: 15pt tahoma;
+            padding: 1em;
+        }
+        p:nth-child(2) { /* Esta regla desplaza el elemento */
+            position: relative; 
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <p>
+            Esto es un ejemplo, tanto de elementos inline-block, como de posicionamiento relativo.
+        </p>
+        <p>
+            Este parrafo está modificado como elemento inline-block y como posicionamiento relativo.
+        </p>
+        <p>
+            Este parrafo está modificado como elemento inline-block, pero sin posicionamiento.
+        </p>
+    </article>
+
+</body>
+
+</html>

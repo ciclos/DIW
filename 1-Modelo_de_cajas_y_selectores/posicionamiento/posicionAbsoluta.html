@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- 
+    Ejemplo de desplazamiento absoluto
+    autor: Diego Cordoba
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main {
+            background:
+                linear-gradient(90deg, white 10px, transparent 1%) center,
+                linear-gradient(white 10px, transparent 1%) center,
+                black;
+            background-size: 12px 12px;
+            position: relative;
+            left: 100px;
+            top: 100px;
+            height: 500px;
+            text-align: center; 
+            padding: 100px;       
+        }
+
+        main>div {
+            background-color: orange;
+            height: 300px;
+            width: 600px;
+           /* position: relative;  Como afecta si quitamos esto ?*/
+
+        }
+
+        div>div {
+            width: 100px;
+            height: 100px;
+        }
+
+        div>div:nth-child(1) {
+            background-color: olivedrab;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        div>div:nth-child(2) {
+            background-color: orchid;
+            position: absolute;
+            top: 100px;
+            left: 300px;
+        }
+
+        div>div:nth-child(3) {
+            background-color: peru;
+            position: absolute;
+            top: 30px;
+            left: 100px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </main>
+
+</body>
+
+</html>

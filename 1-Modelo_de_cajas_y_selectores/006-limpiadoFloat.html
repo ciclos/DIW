@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!--
+    Ejemplo de div limpiador.
+    Diego Cordoba.
+-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Ejercicio posicionamiento float</title>
+    <style type="text/css">
+        main {
+            border: 1px solid #CCC;
+            background-color: #E0E0E0;
+            padding: .5em;
+        }
+        span:nth-child(1) {
+            float: left;
+        }
+        span:nth-child(2) {
+            float: right;
+        }
+        main div {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <span>&laquo; Anterior</span>
+        <span>Siguiente &raquo;</span>
+        <div style="border: 1px solid red"></div>
+    </main>
+</body>
+
+</html>

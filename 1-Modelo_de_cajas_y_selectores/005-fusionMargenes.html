@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--
+  Ejemplo de collapso de margenes entre hermanos.
+-->
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style>
+    /* Fondo de puntitos */
+    body {
+      background:
+        linear-gradient(90deg, white 10px, transparent 1%) center,
+        linear-gradient(white 10px, transparent 1%) center,
+        black;
+      background-size: 12px 12px;
+    }
+
+   
+    div {
+      margin: 1em;
+      background-color: rgb(158, 158, 235);
+     
+    }
+    div > div {
+      background-color: orange;
+    }
+    div + div{
+      background-color: rgb(102, 102, 114);
+      color:white;
+    }
+  </style>
+</head>
+
+<body>
+    <div style="padding: 1em;">
+      <div>
+        <div>
+          Interior
+        </div>
+      </div>
+    </div>
+    <div>
+      Abajo
+    </div>
+    <div>
+      Arriba
+    </div>
+    <div>
+      Abajo
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+    Ejemplo de como merma el texto cuando se usan valores relativos.
+    También podemos observar la cascada de estilos.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 36pt;
+        }
+        div {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>Texto 1</p>
+        <div>
+            <p>Texto 2</p>
+            <div>
+                <p>Texto 3</p>
+                <div>
+                    <p>hola</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

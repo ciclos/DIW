@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+<!--
+	Ejemplos de varias propiedades CSS.
+	Borra o sustituye las propiedades por las que estan en comentarios
+	Diego Cordoba
+-->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		#titulo {
+			background: #aaa;
+			/* Ej5 
+	position: fixed;*/
+		}
+
+		.caja {
+			width: 100px;
+			height: 100px;
+			border: 5px solid black;
+		}
+
+		#contenedor_1 {
+			width: 110px;
+			height: 110px;
+			border: 5px dotted grey;
+			margin: 10px;
+
+		}
+
+		#contenedor_2 {
+
+			width: 300px;
+
+			height: 220px;
+			/* Ej5
+	height: 2000px;*/
+
+			border: 5px dotted grey;
+			margin: 10px;
+			/* Ej4 
+	position: absolute;
+	top:20px;
+	left: 300px;*/
+			overflow: scroll;
+			/* Ej 8 hidden */
+		}
+
+		#caja_1 {
+			background: #f00;
+			/* Ej1
+	position: relative;
+	top: 50px;
+	right: 30px;
+	*/
+		}
+
+		#caja_2 {
+			background: #0f0;
+			/* Ej2 
+	position: relative;
+	right: 30px;
+	top: 10px;*/
+			/* Ej3
+	position: absolute;
+	top: 10px;*/
+			/* Ej 6
+	float: left;
+	*/
+			/* Ej 7 
+	display: none;
+	visibility: hidden; */
+
+		}
+
+		#caja_3 {
+			background: #00f;
+			width: 1000px;
+
+			float: left;
+
+		}
+
+		#caja_4 {
+			background: #a34;
+			z-index: 30;
+			position: relative;
+
+		}
+
+		#caja_5 {
+			/* Sombra */
+			border: 5px solid #555;
+			position: relative;
+			bottom: 105px;
+			left: 5px;
+			z-index: 20;
+		}
+
+		#caja_6 {
+			/* Sombra */
+			border: 5px solid #aaa;
+			position: relative;
+			bottom: 210px;
+			left: 10px;
+			z-index: 1;
+		}
+
+		#contenedor_3 {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			top: 200px;
+			left: 400px;
+		}
+
+		#caja_7 {
+			background: #a34;
+			z-index: 30;
+			position: absolute;
+		}
+
+		#caja_8 {
+			/* Sombra */
+			border: 5px solid #555;
+			position: absolute;
+			top: 5px;
+			left: 5px;
+			z-index: 20;
+		}
+
+		#caja_9 {
+			/* Sombra */
+			border: 5px solid #aaa;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			z-index: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="titulo">
+		<h1>Ejemplos de desplazamiento</h1>
+	</div>
+	<div id="contenedor_1" class="contenedor">
+		<div id="caja_1" class="caja">
+			caja 1
+		</div>
+	</div>
+	<div id="contenedor_2" class="contenedor">
+		<div id="caja_2" class="caja">
+			caja 2
+		</div>
+		La propiedad clear indica el lado del elemento HTML que no debe ser adyacente a
+		ninguna caja posicionada de forma flotante. Si se indica el valor left, el elemento se
+		desplaza de forma descendente hasta que pueda colocarse en una línea en la que no
+		haya ninguna caja flotante en el lado izquierdo.
+		La especificación oficial de CSS explica este comportamiento como "un desplazamiento
+		descendente hasta que el borde superior del elemento esté por debajo del borde inferior de
+		cualquier elemento flotante hacia la izquierda".
+		Si se indica el valor right, el comportamiento es análogo, salvo que en este caso se
+		tienen en cuenta los elementos desplazados hacia la derecha.
+		El valor both despeja los lados izquierdo y derecho del elemento, ya que desplaza el
+		elemento de forma descendente hasta que el borde superior se encuentre por debajo del
+		borde inferior de cualquier elemento flotante hacia la izquierda o hacia la derecha.
+		<div id="caja_3" class="caja">
+			caja 3
+		</div>
+	</div>
+
+	<div id="caja_4" class="caja">
+		caja 4
+	</div>
+	<div id="caja_5" class="caja">
+		caja 5
+	</div>
+	<div id="caja_6" class="caja">
+		caja 6
+	</div>
+
+	<div id="contenedor_3" class="contenedor">
+		<div id="caja_7" class="caja">
+			caja 7
+		</div>
+		<div id="caja_8" class="caja">
+			caja 8
+		</div>
+		<div id="caja_9" class="caja">
+			caja 9
+		</div>
+	</div>
+
+</body>
+
+</html>
