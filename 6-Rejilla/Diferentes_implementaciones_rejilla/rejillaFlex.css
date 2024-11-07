@@ -1,0 +1,84 @@
+[class*="col-"] {
+    box-sizing: border-box; 
+    padding: 0.5em;
+}
+
+ .row
+ {
+     display:flex;
+     flex-wrap: wrap;
+     width: 100%;
+ }
+
+ @media screen and (min-width: 600px) 
+ {
+    .col-m-1 {flex: 0 0 10%;}
+    .col-m-2 {flex: 0 0 20%;}
+    .col-m-3 {flex: 0 0 30%;}
+    .col-m-4 {flex: 0 0 40%;}
+    .col-m-5 {flex: 0 0 50%;}
+    .col-m-6 {flex: 0 0 60%;}
+    .col-m-7 {flex: 0 0 70%;}
+    .col-m-8 {flex: 0 0 80%;}
+    .col-m-9 {flex: 0 0 90%;}
+    .col-m-10 {flex: 0 0 100%;}
+}
+
+ @media only screen and (min-width: 800px) 
+ {
+    .col-l-1 {flex: 0 0 10%;}
+    .col-l-2 {flex: 0 0 20%;}
+    .col-l-3 {flex: 0 0 30%;}
+    .col-l-4 {flex: 0 0 40%;}
+    .col-l-5 {flex: 0 0 50%;}
+    .col-l-6 {flex: 0 0 60%;}
+    .col-l-7 {flex: 0 0 70%;}
+    .col-l-8 {flex: 0 0 80%;}
+    .col-l-9 {flex: 0 0 90%;}
+    .col-l-10 {flex: 0 0 100%;}
+}
+
+
+ /************** ESTILOS GENERALES **********************************************/
+ header {
+     background-color: lightblue;
+     padding: 15px;
+ }
+ 
+ h1{
+     text-shadow: 5px 5px 8px black;
+     color: white;
+     text-align: center;
+ }
+ 
+ .menu_izq{
+     background-color: lightslategray;
+ }
+ 
+ ul{
+     margin-top: 10px;
+     list-style: none;
+     background-color: lightgreen;
+ }
+ 
+ footer{
+     padding: 15px;
+     min-height: 100px;
+     background-color: bisque;
+     text-align: center;
+ }
+ 
+ .tarjeta
+ {
+     border-style: solid;
+     border-radius: 5px;
+     border-width: 2px;
+     border-color: white;
+     background-color: lightsteelblue;
+     color: darkblue;
+     text-align: justify;
+ }
+ 
+ .fondoGris{
+    background-color: lightgrey;
+}

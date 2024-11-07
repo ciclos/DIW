@@ -1,0 +1,84 @@
+[class*="col-"] {
+    box-sizing: border-box; 
+    grid-column: span 10;
+    padding: 0.5em;
+ }
+
+.row
+{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+ 
+ @media screen and (min-width: 600px) 
+ {
+    .col-m-1 { grid-column: span 1;}
+    .col-m-2 {grid-column: span 2;}
+    .col-m-3 {grid-column: span 3;}
+    .col-m-4 {grid-column: span 4;}
+    .col-m-5 {grid-column: span 5;}
+    .col-m-6 {grid-column: span 6;}
+    .col-m-7 {grid-column: span 7;}
+    .col-m-8 {grid-column: span 8;}
+    .col-m-9 {grid-column: span 9;}
+    .col-m-10 {grid-column: span 10;}
+}
+
+ @media only screen and (min-width: 800px) 
+ {
+    .col-l-1 { grid-column: span 1;}
+    .col-l-2 {grid-column: span 2;}
+    .col-l-3 {grid-column: span 3;}
+    .col-l-4 {grid-column: span 4;}
+    .col-l-5 {grid-column: span 5;}
+    .col-l-6 {grid-column: span 6;}
+    .col-l-7 {grid-column: span 7;}
+    .col-l-8 {grid-column: span 8;}
+    .col-l-9 {grid-column: span 9;}
+    .col-l-10 {grid-column: span 10;}
+}
+
+
+ /************** ESTILOS GENERALES **********************************************/
+ header {
+     background-color: lightblue;
+     padding: 15px;
+ }
+ 
+ h1{
+     text-shadow: 5px 5px 8px black;
+     color: white;
+     text-align: center;
+ }
+ 
+ .menu_izq{
+     background-color: lightslategray;
+ }
+ 
+ ul{
+     margin-top: 10px;
+     list-style: none;
+     background-color: lightgreen;
+ }
+ 
+ footer{
+     padding: 15px;
+     min-height: 100px;
+     background-color: bisque;
+     text-align: center;
+ }
+ 
+ .tarjeta
+ {
+     border-style: solid;
+     border-radius: 5px;
+     border-width: 2px;
+     border-color: white;
+     background-color: lightsteelblue;
+     color: darkblue;
+     text-align: justify;
+ }
+ 
+ .fondoGris{
+    background-color: lightgrey;
+}

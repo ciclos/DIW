@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --tamPestanias: 600px;
+            --colorPestaniaActiva: rgb(234, 255, 185);
+        }
+        ul.pestanias{
+            list-style: none;
+            display: flow-root;
+            width: var(--tamPestanias);
+            margin: 0;
+        }
+
+        ul.pestanias>li{
+            border-radius: 10px 10px 0px 0px;
+            float: left;
+            padding: 1em;
+            background-color: rgb(228, 228, 228);
+            margin-left: 1em;
+        }
+        ul.pestanias>li:active{
+            
+            background-color: var(--colorPestaniaActiva);;
+            border-bottom: 0px;
+        }
+        ul.pestanias>li>a{
+            text-decoration: none;
+        }
+
+        ul.pestanias+div{
+            width: var(--tamPestanias);
+            background-color: var(--colorPestaniaActiva);
+            height: 300px;
+            position: relative;
+            bottom: 2px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <ul class="pestanias">
+        <li><a href="Alumno">Alumnos</a></li>
+        <li><a href="Profesores">Profesores</a></li>
+        <li><a href="Jefatura">Jefatura</a></li>
+    </ul>
+    <div>
+
+    </div>
+</body>
+</html>

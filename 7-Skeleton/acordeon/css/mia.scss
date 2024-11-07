@@ -1,0 +1,135 @@
+@import 'normalize', 'skeleton.css';
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*TEMA CLARO*/
+
+$fondoGeneral: white;
+$colorLetra: black;
+$colorEnlaces: black;
+$fondoTituloAcordeon: rgb(0, 255, 89);
+$fondoTituloAcordeon_apagado: rgba(0, 255, 89, 0.431);
+$colorLetraTitulo: rgb(30, 105, 30);
+$fondoContenidoAcordeon: white;
+$bordesRedondeados: 10px;
+
+body.tema.claro {
+
+    background-color: $fondoGeneral;
+    color: $colorLetra;
+
+    a {
+        color: $colorEnlaces;
+    }
+    nav{
+        ul{
+            list-style: none;
+            li{
+                float:left;
+                display: block;
+            }
+        }
+    }
+
+    div.acordeon {
+        div {
+            display: block;
+            width: 100%;
+
+            h3 {
+                font: 14pt Arial;
+                width: 100%;
+                padding-left: 1em;
+                background: $fondoTituloAcordeon;
+                height: 3em;
+                text-transform: uppercase;
+                line-height: 3em;
+                color: $colorLetraTitulo;
+                margin: 0;
+
+                &:hover {
+                    background-color: $fondoTituloAcordeon_apagado;
+                }
+
+                span {
+                    float: right;
+                    padding-right: 2em;
+                }
+            }
+
+            article {
+                background-color: $fondoContenidoAcordeon;
+                color: $colorLetra;
+                border: 2px solid $fondoTituloAcordeon;
+                display: none;
+
+            }
+        }
+    }
+}
+
+/*TEMA OSCURO*/
+
+$fondoGeneral: rgb(88, 88, 88);
+$colorLetra: rgb(255, 254, 254);
+$colorEnlaces: rgb(255, 0, 0);
+$fondoTituloAcordeon: rgb(0, 44, 16);
+$fondoTituloAcordeon_apagado: rgba(1, 11, 5, 0.431);
+$colorLetraTitulo: rgb(30, 105, 30);
+$fondoContenidoAcordeon: rgb(0, 0, 0);
+$bordesRedondeados: 10px;
+$colorMenu: black;
+$colorMenuEncendido: rgb(41, 41, 41);
+
+body.tema.oscuro {
+
+    background-color: $fondoGeneral;
+    color: $colorLetra;
+
+    a {
+        color: $colorEnlaces;
+    }
+
+    div.acordeon {
+        div {
+            display: block;
+            width: 100%;
+
+            h3 {
+                font: 14pt Arial;
+                width: 100%;
+                padding-left: 1em;
+                background: $fondoTituloAcordeon;
+                height: 3em;
+                text-transform: uppercase;
+                line-height: 3em;
+                color: $colorLetraTitulo;
+                margin: 0;
+
+                &:hover {
+                    background-color: $fondoTituloAcordeon_apagado;
+                }
+
+                span {
+                    float: right;
+                    padding-right: 2em;
+                }
+            }
+
+            article {
+                background-color: $fondoContenidoAcordeon;
+                color: $colorLetra;
+                border: 2px solid $fondoTituloAcordeon;
+                display: none;
+
+            }
+        }
+    }
+}

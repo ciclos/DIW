@@ -1,0 +1,125 @@
+@import 'normalize', 'skeleton','miscelanea','menu';
+
+* {
+    box-sizing: border-box;
+}
+
+$fondoTemaClaro: rgb(231, 255, 175);
+$fondoTemaOscuro: rgb(115, 115, 115);
+
+
+body.tema.claro {
+    background-color: $fondoTemaClaro;
+
+    nav {
+        ul {
+            li {
+                display: block;
+                float: left;
+                border: 1px solid black;
+            }
+        }
+
+    }
+
+    .tablero {
+        background-color: grey;
+        padding: 1em;
+    }
+     
+    .panel {
+        padding: 1em;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    .tarjetas {
+        background-color: red;
+        border-radius: 10px;
+        padding: 2em;
+        border: 1px solid black;
+        margin-top: 1em;
+    }
+
+
+    .anadir {
+        text-align: center;
+    }
+
+    .modal{
+        background-color: rgba(0,0,0,0.5);
+        width: 100vw;
+        height:100vh;
+        position: absolute;
+        top:0;
+        left:0;
+
+        div.contenido{
+            width: 40vw;
+            height: 70vh;
+            border-radius: 10px;
+            background-color: white;
+            position: absolute;
+            left: 30%;
+            top: 10%;
+        }
+    }
+
+
+
+
+/*
+    .modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+
+        div {
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+            top: 20%;
+            left: 30%;
+            background-color: white;
+            border-radius: 10px;
+        }
+    }*/
+}
+
+body.tema.oscuro {
+    background-color: $fondoTemaOscuro;
+    $tamPestanias: 600px;
+    $colorPestaniaActiva: rgb(234, 255, 185);
+
+    nav {
+        ul {
+            list-style: none;
+            display: flow-root;
+            width: $tamPestanias;
+            margin: 0;
+
+            li {
+                border-radius: 10px 10px 0px 0px;
+                float: left;
+                padding: 1em;
+                background-color: rgb(228, 228, 228);
+                margin-left: 1em;
+
+                &:active {
+                    background-color: $colorPestaniaActiva;
+                    border-bottom: 0px;
+                }
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+
+}
