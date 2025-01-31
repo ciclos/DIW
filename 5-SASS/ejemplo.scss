@@ -1,0 +1,103 @@
+/* Variable */
+$bg-color: #df0174;
+body {
+    background-color: $bg-color;
+}
+
+/* Operación*/
+$size: 1rem;
+h1{
+    margin: $size * 5;
+}
+
+/* Anidación*/
+p.miParrafo{
+    border: 1px solid black;
+    a{
+        color: red;
+        img{
+            text-decoration: none;
+        }
+        &:hover{
+            color: blue;
+
+        }
+    }
+}
+
+/* Anidamiento a trozos ... */
+.borderDiferentes{
+    border: {
+        style: solid;
+        left: {
+            color: red;
+        }
+        right: {
+            color: blue;
+        }
+    }
+}
+
+/* Bucle for */
+$maxColumnas:12;
+@for $i from 1 through $maxColumnas{
+    .col-#{$i} {
+        width: (100% / $maxColumnas)*$i;
+    }
+}
+
+/* Bucle foreach */
+@each $color in red,blue,white,pink{
+    .#{$color}-color{
+        background-color: #{$color};
+    }
+}
+
+/* Mapas */
+$colores: ( "primario":"#454545",
+            "secundario":"#897654",
+            "terciario":"#fff");
+
+@each $nombre, $color in $colores{
+    .color-#{$nombre}{
+        background-color: #{$color};
+    }
+}
+
+/* Funciones */
+@function anchura($col){
+    @return percentage($col/$maxColumnas);
+}
+
+/* MIXINS */
+@mixin centrado{
+    margin:0px auto;
+}
+header{
+    @include centrado;
+    background-color: red;
+}
+
+/* MIXINS 2*/
+@mixin responsive($puntoRuptura){
+    @if $puntoRuptura==tablet{
+        @media only screen and ( max-width: 600px){
+            @content;
+        }
+    }
+    @if $puntoRuptura==movil{
+        @media only screen and ( max-width: 480px){
+            @content;
+        }
+    }
+}
+
+.main{
+    background-color: red;
+    @include responsive(tablet){
+        background-color: green;
+    }
+    @include responsive(movil){
+        background-color: blue;
+    }
+}

@@ -1,0 +1,132 @@
+@charset "UTF-8";
+/* Variable */
+body {
+  background-color: #df0174;
+}
+
+/* Operación*/
+h1 {
+  margin: 5rem;
+}
+
+/* Anidación*/
+p.miParrafo {
+  border: 1px solid black;
+}
+p.miParrafo a {
+  color: red;
+}
+p.miParrafo a img {
+  text-decoration: none;
+}
+p.miParrafo a:hover {
+  color: blue;
+}
+
+/* Anidamiento a trozos ... */
+.borderDiferentes {
+  border-style: solid;
+  border-left-color: red;
+  border-right-color: blue;
+}
+
+/* Bucle for */
+.col-1 {
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* Bucle foreach */
+.red-color {
+  background-color: red;
+}
+
+.blue-color {
+  background-color: blue;
+}
+
+.white-color {
+  background-color: white;
+}
+
+.pink-color {
+  background-color: pink;
+}
+
+/* Mapas */
+.color-primario {
+  background-color: #454545;
+}
+
+.color-secundario {
+  background-color: #897654;
+}
+
+.color-terciario {
+  background-color: #fff;
+}
+
+/* Funciones */
+/* MIXINS */
+header {
+  margin: 0px auto;
+  background-color: red;
+}
+
+/* MIXINS 2*/
+.main {
+  background-color: red;
+}
+@media only screen and (max-width: 600px) {
+  .main {
+    background-color: green;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .main {
+    background-color: blue;
+  }
+}/*# sourceMappingURL=ejemplo.css.map */
