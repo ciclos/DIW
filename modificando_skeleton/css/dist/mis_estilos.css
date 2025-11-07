@@ -1,0 +1,11 @@
+a {
+  color: #658C58;
+}
+
+ul.nav_horizontal li {
+  display: inline;
+}
+
+ul.nav_vertical li {
+  display: inline;
+}
