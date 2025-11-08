@@ -52,6 +52,7 @@
 @media (min-width: 550px) {
   .container {
     width: 80%; }
+
   .column,
   .columns {
     margin-left: 4%; }
@@ -409,10 +410,16 @@ there.
 @media (min-width: 550px) {}
 
 /* Larger than tablet */
-@media (min-width: 750px) {}
+@media (min-width: 750px) {
+
+}
 
 /* Larger than desktop */
 @media (min-width: 1000px) {}
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+
+
