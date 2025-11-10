@@ -1,5 +1,3 @@
-@use 'colores' as *;
-
 a{
-    color: $color_terciario;
+    color: --var(--color-principal);
 }
