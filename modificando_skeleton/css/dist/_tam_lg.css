@@ -39,7 +39,10 @@
     margin-left: 0;
   }
 
-  /* generado */
+  .one-lg.columns {
+    width: 4.6666666667%;
+  }
+
   .one-lg.columns {
     width: 4.6666666667%;
   }
@@ -88,53 +91,7 @@
     width: 100.%;
   }
 
-  .one-lg.column,
-.one-lg.columns {
-    width: 4.6666666667%;
-  }
-
-  .two-lg.columns {
-    width: 13.3333333333%;
-  }
-
-  .three-lg.columns {
-    width: 22%;
-  }
-
-  .four-lg.columns {
-    width: 30.6666666667%;
-  }
-
-  .five-lg.columns {
-    width: 39.3333333333%;
-  }
-
-  .six-lg.columns {
-    width: 48%;
-  }
-
-  .seven-lg.columns {
-    width: 56.6666666667%;
-  }
-
-  .eight-lg.columns {
-    width: 65.3333333333%;
-  }
-
-  .nine-lg.columns {
-    width: 74%;
-  }
-
-  .ten-lg.columns {
-    width: 82.6666666667%;
-  }
-
-  .eleven-lg.columns {
-    width: 91.3333333333%;
-  }
-
   .twelve-lg.columns {
-    width: 100%;
     margin-left: 0;
   }
 
