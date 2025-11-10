@@ -1,0 +1,11 @@
+
+@mixin generar-columnas ( $dimension){
+    $i: 0;
+    $dif_columns: 12;
+    @each $tam in one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve {
+      .#{$tam}-#{$dimension}.columns {
+        width: 4.66666666667% + $i*8.66666666667%;
+      }
+      $i: $i + 1;
+    }
+  } 
