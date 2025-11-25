@@ -1,5 +1,3 @@
-@use '_mixins' as *;
-
 /* For devices larger than 550px */
 @media (min-width: 550px) {
  
@@ -31,7 +29,7 @@
     }
   
     .column,
-    .columns {
+    .columns { 
       margin-left: 4%; }
     .column:first-child,
     .columns:first-child {

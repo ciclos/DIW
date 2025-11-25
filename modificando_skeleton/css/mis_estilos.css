@@ -967,7 +967,7 @@ there.
   .columns:first-child {
     margin-left: 0;
   }
-  .one-lg.columns {
+  .one-lg.column {
     width: 4.6666666667%;
   }
   .one-lg.columns {
@@ -1082,7 +1082,7 @@ there.
 /* Larger than desktop */
 /* Larger than Desktop HD */
 a {
-  color: --var(--color-principal);
+  color: var(--colorPrincipal);
 }
 
 ul.nav_horizontal li {

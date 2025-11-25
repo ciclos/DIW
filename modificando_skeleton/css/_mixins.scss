@@ -1,8 +1,8 @@
 
-@mixin generar-columnas ( $dimension){
+@mixin generar_columnas ( $dimension){
   $i: 0;
   
-  .one-#{$dimension}.columns{ 
+  .one-#{$dimension}.column{ 
     width: 4.66666666667%; 
   }
   
