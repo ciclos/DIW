@@ -1,0 +1,25 @@
+
+@mixin generar_columnas ( $dimension){
+  $i: 0;
+  
+  .one-#{$dimension}.column{ 
+    width: 4.66666666667%; 
+  }
+  
+  @each $tam in one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve {
+    .#{$tam}-#{$dimension}.columns {
+      width: 4.66666666667% + $i*8.66666666667%;
+    }
+    .offset-#{$dimension}-by-#{$tam}.column,
+    .offset-#{$dimension}-by-#{$tam}.columns{ 
+      margin-left: 8.66666666667%*($i+1);
+    }
+    $i: $i + 1;
+  }
+
+  .twelve-#{$dimension}.columns{ 
+    margin-left: 0;
+  }
+    
+} 
+

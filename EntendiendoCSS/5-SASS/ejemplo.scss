@@ -55,10 +55,7 @@ $maxColumnas:12;
 }
 
 /* Bucle foreach */
-@each $color in red,
-blue,
-white,
-pink {
+@each $color in red,blue,white,pink {
     .#{$color}-color {
         background-color: #{$color};
     }
