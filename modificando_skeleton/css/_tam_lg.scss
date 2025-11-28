@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 /* For devices larger than 550px */
 @media (min-width: 550px) {
  
@@ -35,7 +37,7 @@
     .columns:first-child {
       margin-left: 0; }
   
-    @include generar_columnas("lg");
+    @include generar_columnas("md");
   
     .one-third-lg.column               { width: 30.6666666667%; }
     .two-thirds-lg.column              { width: 65.3333333333%; }
@@ -53,10 +55,14 @@
   }
   
   /* Larger than desktop */
-  @media (min-width: 1000px) {}
+  @media (min-width: 1000px) {
+    @include generar_columnas("lg");
+  }
   
   /* Larger than Desktop HD */
-  @media (min-width: 1200px) {}
+  @media (min-width: 1200px) {
+    @include generar_columnas("xl");
+  }
   
   
   
