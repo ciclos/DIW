@@ -928,10 +928,24 @@ there.
 /* Larger than Desktop HD */
 :root {
   --fuenteGeneral:12pt Verdana, Arial;
-  --colorPrincipal: #B38D97;
-  --colorSecundario: #D5ACA9;
-  --colorTerciario: #EBCFB2;
-  --colorCuaternario: #d1a7b1;
+  --colorPrincipal: #852a42;
+  --colorSecundario: #a7ea6d;
+  --colorTerciario: #cf7516;
+  --colorCuaternario: #4d3cd4;
+}
+
+body.claro {
+  background-color: var(--colorPrincipal);
+}
+body.claro a {
+  color: var(--colorCuaternario);
+}
+
+body.oscuro {
+  background-color: var(--colorSecundario);
+}
+body.oscuro a {
+  color: var(--colorTerciario);
 }
 
 /* For devices larger than 550px */
