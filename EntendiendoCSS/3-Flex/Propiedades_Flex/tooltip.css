@@ -3,7 +3,7 @@
     display: inline-block;
 }
 
-.tooltip .tooltiptext_abajo, .tooltip .tooltiptext_arriba{
+.tooltip .tooltiptext_abajo, .tooltip .tooltiptext_arriba, .tooltip .tooltiptext_derecha{
     visibility: hidden;
     background-color: #555;
     color: #fff;
@@ -26,6 +26,11 @@
 
 .tooltiptext_abajo{
     top: 125%;
+    width: 220px;
+}
+
+.tooltiptext_derecha{
+    right: -1%;
     width: 220px;
 }
 
@@ -52,8 +57,21 @@
     border-color:  transparent transparent #555 transparent;
 }
 
+
+.tooltip .tooltiptext_derecha::after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: 25%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color:  transparent #555 transparent transparent ;
+}
+
+
 /*-- Disparador del tooltip*/
-.tooltip:hover .tooltiptext_arriba, .tooltip:hover .tooltiptext_abajo {
+.tooltip:hover .tooltiptext_arriba, .tooltip:hover .tooltiptext_abajo, .tooltip:hover .tooltiptext_derecha {
     visibility: visible;
     opacity: 1;
 }
